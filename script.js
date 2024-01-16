@@ -1,4 +1,3 @@
-<script>
 
 // side bar menu hide
 var menuIcon = document.querySelector("#side_bar_main_icon");
@@ -120,4 +119,4 @@ function shuffleElements(container) {
 
 
     //card filter 
-    </script>
+
