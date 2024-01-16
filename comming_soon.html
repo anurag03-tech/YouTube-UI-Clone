@@ -1,0 +1,230 @@
+<html>
+<head>
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f1e97e104.js" crossorigin="anonymous"></script>
+
+<style>
+        /* Initially hide the video */
+#myVideo {
+    display: none;
+}
+
+/* Style the video container */
+.video-container {
+        position: relative;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        }
+
+video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        }
+
+/* Style the thumbnail image */
+#thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+</style>
+
+</head>
+<body class="default_color">
+    <div id="header" class="default_color">
+        <div id="side_bar_main_icon">
+            <img src="images/side_bar_icon.PNG" style="height: 100%; width: 100%;">
+        </div>
+        <a href="index.html">
+        <div id="logo">
+            <div id="logo_main"></div>
+        </div>
+        </a>
+        <form id="searchForm">
+            <div id="search_box">
+                <div id="search_content">
+                    <input type="text" id="searchInput" placeholder="Search" name="searchInput">
+                    
+                    <button type="submit"><img src="images/search_icon.PNG"></button> 
+                </div>
+                <div id="mic_logo">
+                    <img src="images/mic_logo.png">
+                </div>
+            </div>
+        </form>        
+
+        <div id="header_right">
+            <div id="header_right_content">
+                <div id="create_icon"></div>
+                <div id="bell_icon">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div id="sign_box">
+                    <img src="images/Untitled sinf.png" style="height: 100%; width: auto;">
+                    <span style="padding: 2px; padding-left: 5px; color: #00a2e8; font-weight: 500; font-size: 15px;">Sign in</span>
+                </div>
+            </div>    
+        </div>  
+    </div>
+
+    <div id="biggest_box">
+        <div class="side_bar">
+            
+            <div class="side_bar_content_box" style="margin-top:56px;">
+                
+                <a href="./" style="text-decoration: none; color: white;">
+                <div class="side_bar_content" style="background-color: #282828;">
+                    <div class="side_bar_icon"><img src="images/home_icon.png" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Home</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/shorts_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Shorts</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/subscriprion_icon.png" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Subscriptions</div>
+                </div>
+                </a>
+
+            </div>
+
+
+            <div class="side_bar_content_box">
+                
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/library_icon.png" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Library</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/history_icon.png" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">History</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/like_icon_defaul.png" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Liked Video</div>
+                </div>
+                </a>
+
+            </div>
+
+            <div class="side_bar_content_box">
+                <h4 style="padding-left: 15px;padding-bottom: 10px; font-weight: 540; color: white;">Explore</h4>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/trending_logo.png" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Trending</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/shopping_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Shopping</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/music_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Music</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/film_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Films</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/live_logo.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Live</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/gaming_logo.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Gaming</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/news_logo.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">News</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/sports_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Sport</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/learning_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Learning</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/podcast_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Podcasts</div>
+                </div>
+                </a>
+
+            </div>
+            
+            <div class="side_bar_content_box">
+                
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/setting_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Settings</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/flag_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Report history</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/help_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Help</div>
+                </div>
+                </a>
+                <a href="#" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/feedback_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Send feedback</div>
+                </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="body_box">
+           <img src="images/coming-soon-animated-gif-8.gif" style="width: auto; height: 550px;margin-left: 120px; margin-top: 75px; border-radius: 20px;">
+        </div>
+    <div>
+</div>
+
+
+
+</body>
+</html>

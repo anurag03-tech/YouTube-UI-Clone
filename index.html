@@ -1,0 +1,694 @@
+<html>
+<head>
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f1e97e104.js" crossorigin="anonymous"></script>
+
+<style>
+        /* Initially hide the video */
+#myVideo {
+    display: none;
+}
+
+/* Style the video container */
+.video-container {
+        position: relative;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        }
+
+video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        }
+
+/* Style the thumbnail image */
+#thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+</style>
+
+</head>
+<body class="default_color">
+    <div id="header" class="default_color">
+        <div id="side_bar_main_icon">
+            <img src="images/side_bar_icon.PNG" style="height: 100%; width: 100%;">
+        </div>
+        <a href="index.html">
+        <div id="logo">
+            <div id="logo_main"></div>
+        </div>
+        </a>
+        <form id="searchForm">
+            <div id="search_box">
+                <div id="search_content">
+                    <input type="text" id="searchInput" placeholder="Search" name="searchInput">
+                    
+                    <button type="submit"><img src="images/search_icon.PNG"></button> 
+                </div>
+                <div id="mic_logo">
+                    <img src="images/mic_logo.png">
+                </div>
+            </div>
+        </form>        
+
+        <div id="header_right">
+            <div id="header_right_content">
+                <div id="create_icon"></div>
+                <div id="bell_icon">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div id="sign_box">
+                    <img src="images/Untitled sinf.png" style="height: 100%; width: auto;">
+                    <span style="padding: 2px; padding-left: 5px; color: #00a2e8; font-weight: 500; font-size: 15px;">Sign in</span>
+                </div>
+            </div>    
+        </div>  
+    </div>
+
+    <div id="biggest_box">
+        <div class="side_bar">
+            
+            <div class="side_bar_content_box" style="margin-top:56px;">
+                
+                <a href="./" style="text-decoration: none; color: white;">
+                <div class="side_bar_content" style="background-color: #282828;">
+                    <div class="side_bar_icon"><img src="images/home_icon.png" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Home</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/shorts_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Shorts</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/subscriprion_icon.png" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Subscriptions</div>
+                </div>
+                </a>
+
+            </div>
+
+            <div class="side_bar_content_box">
+                
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/library_icon.png" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Library</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/history_icon.png" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">History</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/like_icon_defaul.png" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Liked Video</div>
+                </div>
+                </a>
+
+            </div>
+
+            <div class="side_bar_content_box">
+                <h4 style="padding-left: 15px;padding-bottom: 10px; font-weight: 540; color: white;">Explore</h4>
+                <a href="https://www.youtube.com/feed/trending?bp=6gQJRkVleHBsb3Jl" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/trending_logo.png" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Trending</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/shopping_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Shopping</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/music_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Music</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/film_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Films</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/live_logo.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Live</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/gaming_logo.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Gaming</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/news_logo.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">News</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/sports_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Sport</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/learning_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Learning</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/podcast_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Podcasts</div>
+                </div>
+                </a>
+
+            </div>
+            
+            <div class="side_bar_content_box">
+                
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/setting_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Settings</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/flag_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Report history</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/help_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Help</div>
+                </div>
+                </a>
+                <a href="comming_soon.html" style="text-decoration: none; color: white;">
+                <div class="side_bar_content">
+                    <div class="side_bar_icon"><img src="images/feedback_icon.PNG" style="width: 23px; height: auto; margin: 1px;"></div>
+                    <div class="side_bar_icon_head">Send feedback</div>
+                </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="body_box">
+            <div id="body_main_head">
+                <div class="body_main_head_topic" style="color: black; background-color: white;">All</div>
+                <div class="body_main_head_topic">Live</div>
+                <div class="body_main_head_topic">Java Script</div>
+                <div class="body_main_head_topic">News</div>
+                <div class="body_main_head_topic">Sandeep Maheshwari</div>
+                <div class="body_main_head_topic">CSS</div>
+                <div class="body_main_head_topic">Music</div>
+                <div class="body_main_head_topic">ICC World Cup</div>
+                <div class="body_main_head_topic">Dhruv Rathee</div>
+                <div class="body_main_head_topic">Aliens</div>
+                <div class="body_main_head_topic">T-Series</div>
+                
+            </div>
+            <div id="body_main_content">
+                <div class="card">
+                    <a href="video_window.html?thumbnail=video/thumbnail/Mystery%20of%20Flight%20571.jpg&src=video/video%20file/Mystery%20of%20Flight%20571%20_WorldGreatest%20Miracle%20_Dhruv%20Rathee.mp4&icon=video/chanel%20icon/Dhruv%20Rathee.jpg&title=Mystery%20of%20Flight%20571%20|%20World's%20Greatest%20Miracle%20|%20Dhruv%20Rathee&channel=Dhruv%20Rathee&views=5.5%20M%20views&date=1%20Week%20ago">
+                        <div class="video_card">
+                            <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                                <img id="thumbnail" src="video/thumbnail/Mystery of Flight 571.jpg">
+                                <video id="myVideo" src="video/video file/Mystery of Flight 571 _ WorldGreatest Miracle _ Dhruv Rathee.mp4" preload="auto" loop>Your browser does not support the video tag.</video>
+                            </div>
+                        </div>
+                        <div class="video_head">
+                            <div class="channel_icon">
+                                <img src="video/chanel icon/Dhruv Rathee.jpg">
+                            </div>
+                            <div class="video_heading_content">Mystery of Flight 571 | World's Greatest Miracle | Dhruv Rathee
+                                    <p>Dhruv Rathee</p>
+                                    <p>5.5 M views * 1 Week ago</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                             
+                <div class="card">
+                    <a href="video_window.html?src=video/SQL%20-%20Complete%20Course%20in%203%20Hours%20_%20SQL%20One%20Shot%20using%20MySQL.mp4&icon=apna_college_icon.jpg&title=SQL%20-%20Complete%20Course%20in%203%20Hours%20|%20SQL%20One%20Shot%20using%20MySQL&channel=Apna%20College&views=1.2%20M%20views&date=3%20weeks%20ago">
+                    <div class="video_card">
+                        <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <img id="thumbnail" src="video/thumbnail/sql.avif">
+                            <video id="myVideo" src="video/SQL - Complete Course in 3 Hours _ SQL One Shot using MySQL.mp4" preload="auto" loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video_head">
+                        <div class="channel_icon">
+                            <img src="images/apna_college_icon.jpg">
+                        </div>
+                        <div class="video_heading_content">SQL - Complete Course in 3 Hours | SQL One Shot using MySQL
+                                <p>Apna College</p>
+                                <p>1.2 M views * 3 weeks ago</p>
+                        </div>
+                    </div>
+                </a>
+                </div>        
+                
+                <div class="card">
+                    <a href="video_window.html?thumbnail=video/thumbnail/ind%20vs%20sl%20asia%20cup.webp&src=video/Super11%20Asia%20Cup%202023%20_%20Final%20_%20India%20vs%20Sri%20Lanka%20_%20Highlights.mp4&icon=video/chanel%20icon/Asian%20Cricket%20Council.jpg&title=Super11%20Asia%20Cup%202023%20|%20Final%20|%20India%20vs%20Sri%20Lanka%20|%20Highlights&channel=Asian%20Cricket%20Council&views=36%20M%20views&date=4%20weeks%20ago">
+                    <div class="video_card">
+                        <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <img id="thumbnail" src="video/thumbnail/ind vs sl asia cup.webp">
+                            <video id="myVideo" src="video/Super11 Asia Cup 2023 _ Final _ India vs Sri Lanka _ Highlights.mp4" preload="auto" loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video_head">
+                        <div class="channel_icon">
+                            <img src="video/chanel icon/Asian Cricket Council.jpg">
+                        </div>
+                        <div class="video_heading_content">Super11 Asia Cup 2023 | Final | India vs Sri Lanka | Highlights
+                                <p>Asian Cricket Council</p>
+                                <p>36 M views * 4 weeks ago</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                
+                <div class="card">
+                    <a href="video_window.html?src=video/video%20file/Ancient%20Aliens_%20Egyptian%20Mysteries%20Hide%20Proof%20of%20UFOs.mp4&icon=video/chanel%20icon/Ancient%20Aliens.jpg&title=Ancient%20Aliens:%20Egyptian%20Mysteries%20Hide%20Proof%20of%20UFOs&channel=Ancient%20Aliens&views=2.1%20M%20views&date=6%20Months%20ago">
+                    <div class="video_card">
+                        <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <img id="thumbnail" src="video/thumbnail/ancient aliens egypt.jpg">
+                            <video id="myVideo" src="video/video file/Ancient Aliens_ Egyptian Mysteries Hide Proof of UFOs.mp4" preload="auto" loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video_head">
+                        <div class="channel_icon">
+                            <img src="video/chanel icon/Ancient Aliens.jpg">
+                        </div>
+                        <div class="video_heading_content">Ancient Aliens: Egyptian Mysteries Hide Proof of UFOs
+                                <p>Ancient Aliens</p>
+                                <p>2.1 M views * 6 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                
+                <div class="card">
+                    <a href="video_window.html?src=video/video%20file/How%20To%20Think_%20Episode%203.mp4&icon=video/chanel%20icon/Sandeep%20Maheshwari.jpg&title=How%20To%20Think%3F%20Episode%203&channel=Sandeep%20Maheshwari&views=605%20K%20views&date=4%20Months%20ago">
+                    <div class="video_card">
+                        <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <img id="thumbnail" src="video/thumbnail/how to think.jpg">
+                            <video id="myVideo" src="video/video file/How To Think_ Episode 3.mp4" preload="auto" loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video_head">
+                        <div class="channel_icon">
+                            <img src="video/chanel icon/Sandeep Maheshwari.jpg">
+                        </div>
+                        <div class="video_heading_content">How To Think? Episode 3
+                                <p>Sandeep Maheshwari </p>
+                                <p>605 K views * 4 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                
+                <div class="card">
+                    <a href="video_window.html?src=video/Dynamic%20Quiz%20Website%20using%20HTML%20CSS%20%26%20JavaScript%20in%20Hindi🔥.mp4&icon=video/chanel%20icon/thapa%20technical.jpg&title=Dynamic%20Quiz%20Website%20using%20HTML%20CSS%20%26%20JavaScript%20in%20Hindi🔥&channel=Thapa%20Technical&views=7.3%20K%20views&date=4%20weeks%20ago">
+                    <div class="video_card">
+                        <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <img id="thumbnail" src="video/thumbnail/quiz website.jpg">
+                            <video id="myVideo" src="video/Dynamic Quiz Website using HTML CSS & JavaScript in Hindi🔥.mp4" preload="auto" loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video_head">
+                        <div class="channel_icon">
+                            <img src="video/chanel icon/thapa technical.jpg">
+                        </div>
+                        <div class="video_heading_content">Dynamic Quiz Website using HTML CSS & JavaScript in Hindi🔥
+                           <span style=" font-size: 15px;width:50px; height: 40px; background:red; color: rgb(170, 170, 170); line-height: 1.2rem;font-weight: 500">
+                                <p>Thapa Technical</p>
+                                <p>7.3 K views * 4 weeks ago</p>
+                        </div>
+                    </div>
+                    </a>    
+                </div>
+                
+                <div class="card">
+                    <a href="video_window.html?src=video/video%20file/Malang%20_%20Dhoom-3.mp4&icon=video/chanel%20icon/musical%20vibes.jpg&title=Malang%20|%20Dhoom-3%20|%20Amir%20khan%20|%20Siddharth%20|%20Slowed%20Reverb%20|&channel=musical%20vibes&views=1.1%20M%20views&date=1%20Year%20ago">
+                    <div class="video_card">
+                        <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <img id="thumbnail" src="video/thumbnail/malang.jpg">
+                            <video id="myVideo" src="video/video file/Malang _ Dhoom-3.mp4" preload="auto" loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video_head">
+                        <div class="channel_icon">
+                            <img src="video/chanel icon/musical vibes.jpg">
+                        </div>
+                        <div class="video_heading_content">Malang | Dhoom-3 | Amir khan | Siddharth | Slowed Reverb |
+                                <p>musical vibes</p>
+                                <p>1.1 M views * 1 Year ago</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+                <div class="card">
+                    <a href="video_window.html?src=video/video%20file/Why%20Hitler%20Lost_%20_%20World%20War%202%20_%20Dhruv%20Rathee.mp4&icon=video/chanel%20icon/Dhruv%20Rathee.jpg&title=Why%20Hitler%20Lost?%20|%20World%20War%202%20|%20Dhruv%20Rathee&channel=Dhruv%20Rathee&views=8.5%20M%20views&date=5%20Months%20ago">
+                    <div class="video_card">
+                        <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <img id="thumbnail" src="video/thumbnail/fall of hitler.jpg">
+                            <video id="myVideo" src="video/video file/Why Hitler Lost_ _ World War 2 _ Dhruv Rathee.mp4" preload="auto" loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video_head">
+                        <div class="channel_icon">
+                            <img src="video/chanel icon/Dhruv Rathee.jpg">
+                        </div>
+                        <div class="video_heading_content">Why Hitler Lost? | World War 2 | Dhruv Rathee
+                                <p>Dhruv Rathee</p>
+                                <p>8.5 M views * 5 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                
+                <div class="card">
+                    <a href="video_window.html?src=video/video%20file/Tesla%20-%20Inventor%20of%20the%20Modern%20World%20Documentary.mp4&icon=video/chanel%20icon/The%20People%20Profiles.jpg&title=Tesla%20-%20Inventor%20of%20the%20Modern%20World%20Documentary&channel=The%20People%20Profiles&views=1%20M%20views&date=5%20Months%20ago">
+                    <div class="video_card">
+                        <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <img id="thumbnail" src="video/thumbnail/Tesla - Inventor of the Modern World Documentary.jpg">
+                            <video id="myVideo" src="video/video file/Tesla - Inventor of the Modern World Documentary.mp4" preload="auto" loop>                                    Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video_head">
+                        <div class="channel_icon">
+                            <img src="video/chanel icon/The People Profiles.jpg">
+                        </div>
+                        <div class="video_heading_content">Tesla - Inventor of the Modern World Documentary
+                                <p>The People Profiles</p>
+                                <p>1 M views * 5 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                
+                <div class="card">
+                    <a href="video_window.html?src=video/video%20file/Meet%20Dr.%20Vikas%20Divyakirti%20_%20Episode%2050.mp4&icon=video/chanel%20icon/Sandeep%20Maheshwari.jpg&title=Meet%20Dr.%20Vikas%20Divyakirti%20|%20Episode%2050&channel=Sandeep%20Maheshwari&views=16%20M%20views&date=11%20Months%20ago">
+                    <div class="video_card">
+                        <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <img id="thumbnail" src="video/thumbnail/meet dr. vikas div.jpg">
+                            <video id="myVideo" src="video/video file/Meet Dr. Vikas Divyakirti _ Episode 50.mp4" preload="auto" loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video_head">
+                        <div class="channel_icon">
+                            <img src="video/chanel icon/Sandeep Maheshwari.jpg">
+                        </div>
+                            <div class="video_heading_content">Meet Dr. Vikas Divyakirti | Episode 50
+                                <p>Sandeep Maheshwari </p>
+                                <p>16 M views * 11 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                    
+                <div class="card">
+                    <a href="video_window.html?src=video/video%20file/I%20BUILD%20A%20BIG%20LUXURY%20CAR%20SHOWROOM.mp4&icon=video/chanel%20icon/Techno%20Gamerz.jpg&title=I%20BUILD%20A%20BIG%20LUXURY%20CAR%20SHOWROOM&channel=Techno%20Gamerz&views=12%20M%20views&date=1%20week%20ago">
+                    <div class="video_card">
+                        <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <img id="thumbnail" src="video/thumbnail/techno_game_thumbnail.jpg">
+                            <video id="myVideo" src="video/video file/I BUILD A BIG LUXURY CAR SHOWROOM.mp4" preload="auto" loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video_head">
+                        <div class="channel_icon">
+                            <img src="video/chanel icon/Techno Gamerz.jpg">
+                        </div>
+                        <div class="video_heading_content">I BUILD A BIG LUXURY CAR SHOWROOM
+                                <p>Techno Gamerz</p>
+                                <p>12 M views * 1 weeks ago</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                    
+                <div class="card">
+                    <a href="video_window.html?src=video/video%20file/Arrays%20In%20One%20Shot%20C%2B%2B%20_%20Complete%20DSA%20Course%202023.mp4&icon=video/chanel%20icon/college%20wallah.jpg&title=Arrays%20In%20One%20Shot%20C%2B%2B%20|%20Complete%20DSA%20Course%202023%20|%20Placement%20/%20Internships&channel=College%20Wallah&views=13%20K%20views&date=2%20Weeks%20ago">
+                    <div class="video_card">
+                        <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <img id="thumbnail" src="video/thumbnail/array.jpg">
+                            <video id="myVideo" src="video/video file/Arrays In One Shot C++ _ Complete DSA Course 2023.mp4" preload="auto" loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video_head">
+                        <div class="channel_icon">
+                            <img src="video/chanel icon/college wallah.jpg">
+                        </div>
+                        <div class="video_heading_content">Arrays In One Shot C++ | Complete DSA Course 2023 | Placement / Internships
+                                <p>College Wallah</p>
+                                <p>13 K views * 2 Weeks ago</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                
+                <div class="card">
+                    <a href="video_window.html?thumbnail=video/thumbnail/js_36.jpg&src=video/video%20file/Events%20in%20Javascript%20_%20chai.mp4&icon=video/chanel%20icon/Chai%20aur%20Code.jpg&title=Events%20in%20Javascript%20|%20chai%20aur%20%23javascript&channel=Chai%20aur%20Code&views=36%20K%20views&date=3%20Months%20ago">
+                    <div class="video_card">
+                        <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <img id="thumbnail" src="video/thumbnail/js_36.jpg">
+                            <video id="myVideo" src="video/video file/Events in Javascript _ chai.mp4" preload="auto" loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video_head">
+                        <div class="channel_icon">
+                            <img src="video/chanel icon/Chai aur Code.jpg">
+                        </div>
+                        <div class="video_heading_content">Events in Javascript | chai aur #javascript
+                                <p>Chai aur Code</p>
+                                <p>36 K views * 3 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+                <div class="card">
+                    <a href="video_window.html?src=video/video%20file/OPPO%20Find%20N3%20Flip%20Unboxing%20-%20Flagship%20Flip%20Phone!.mp4&icon=video/chanel%20icon/Tech%20Burner.jpg&title=OPPO%20Find%20N3%20Flip%20Unboxing%20-%20Flagship%20Flip%20Phone!&channel=Tech%20Burner&views=1%20M%20views&date=1%20week%20ago">
+                    <div class="video_card">
+                        <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <img id="thumbnail" src="video/thumbnail/OPPO Find N3.jpg">
+                            <video id="myVideo" src="video/video file/OPPO Find N3 Flip Unboxing - Flagship Flip Phone!.mp4" preload="auto" loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video_head">
+                        <div class="channel_icon">
+                            <img src="video/chanel icon/Tech Burner.jpg">
+                        </div>
+                        <div class="video_heading_content">OPPO Find N3 Flip Unboxing - Flagship Flip Phone!
+                                <p>Tech Burner</p>
+                                <p>1 M views * 1 weeks ago</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+                <div class="card">
+                    <a href="video_window.html?src=video/video%20file/Mystery%20of%20Area%2051%20_%20Are%20there%20really%20UFOs%20and%20Aliens_%20_%20Dhruv%20Rathee.mp4&icon=video/chanel%20icon/Dhruv%20Rathee.jpg&title=Mystery%20of%20Area%2051%20|%20Are%20there%20really%20UFOs%20and%20Aliens?%20|%20Dhruv%20Rathee&channel=Dhruv%20Rathee&views=10%20M%20views&date=9%20Months%20ago">
+                    <div class="video_card">
+                        <div class="video-container" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                            <img id="thumbnail" src="video/thumbnail/AREA51.jpg">
+                            <video id="myVideo" src="video/video file/Mystery of Area 51 _ Are there really UFOs and Aliens_ _ Dhruv Rathee.mp4" preload="auto" loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video_head">
+                        <div class="channel_icon">
+                            <img src="video/chanel icon/Dhruv Rathee.jpg">
+                        </div>
+                        <div class="video_heading_content">Mystery of Area 51 | Are there really UFOs and Aliens? | Dhruv Rathee
+                                <p>Dhruv Rathee</p>
+                                <p>10 M views * 9 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+            </div>    
+        </div>
+    </div>
+
+
+
+<script>
+
+// side bar menu hide
+var menuIcon = document.querySelector("#side_bar_main_icon");
+var sideBar = document.querySelector(".side_bar");
+var contentBox = document.querySelectorAll(".side_bar_content_box");
+var content = document.querySelectorAll(".side_bar_content");
+var smallSize = document.querySelectorAll(".side_bar_icon_head");
+var hidebox = document.querySelectorAll(".side_bar_content_box");
+var hidecontent = document.querySelectorAll(".side_bar_content");
+var expBody = document.querySelector(".body_box");
+
+menuIcon.addEventListener("click", function () {
+    expBody.classList.toggle("body_box_exp");
+    sideBar.classList.toggle("side_bar_wp");
+  for (var i = 0; i <= 5; i++) {
+    content[i].classList.toggle("side_bar_content_wp");
+    smallSize[i].classList.toggle("side_bar_icon_head_wp");
+    if(i==5){
+        hidecontent[i].classList.toggle("side_bar_content_box_wp_hide");
+    }
+  }
+  for (var i = 0; i < 2; i++) {
+    contentBox[i].classList.toggle("side_bar_content_box_wp");
+  }
+  for (var i = 2; i < 6; i++) {
+    hidebox[i].classList.toggle("side_bar_content_box_wp_hide");
+    
+  }
+
+});
+
+/*
+
+
+        var video = document.getElementById("myVideo");
+
+        function playVideo() {
+            video.play();
+        }
+
+        function pauseVideo() {
+            video.pause();
+        }*/
+
+function playVideo(container) {
+    const video = container.querySelector('#myVideo');
+    const thumbnail = container.querySelector('#thumbnail');
+
+    video.style.display = 'block';
+    thumbnail.style.display = 'none';
+    video.play();
+}
+
+function pauseVideo(container) {
+    const video = container.querySelector('#myVideo');
+    const thumbnail = container.querySelector('#thumbnail');
+
+    video.style.display = 'none';
+    thumbnail.style.display = 'block';
+    video.pause();
+}
+
+
+
+// shuffle home page video
+
+function shuffleElements(container) {
+    for (let i = container.children.length; i >= 0; i--) {
+      container.appendChild(container.children[(Math.random() * i) | 0]);
+    }
+  }
+
+  // Get the container element
+  const container = document.getElementById('body_main_content');
+
+  // Shuffle the .card elements
+  shuffleElements(container);
+
+
+
+
+
+
+  //search 
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("searchInput");
+        const cards = document.querySelectorAll(".card");
+
+        function filterCards(searchQuery) {
+            searchQuery = searchQuery.toLowerCase();
+            cards.forEach((card) => {
+                const headingContent = card.querySelector(".video_heading_content").textContent.toLowerCase();
+
+                if (headingContent.includes(searchQuery)) {
+                    card.style.display = "block"; // Show matching cards
+                } else {
+                    card.style.display = "none"; // Hide non-matching cards
+                }
+            });
+        }
+
+        const searchForm = document.getElementById("searchForm");
+
+        searchForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const searchQuery = searchInput.value;
+            filterCards(searchQuery);
+        });
+
+        searchInput.addEventListener("input", function () {
+            const searchQuery = searchInput.value;
+            filterCards(searchQuery);
+        });
+    });
+
+
+
+    //card filter 
+    </script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Window</title>
+    <link rel="stylesheet" href="_vid.css">
+    <script src="https://kit.fontawesome.com/8f1e97e104.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="default_color">
+
+    <div id="header" class="default_color">
+        <div id="side_bar_main_icon">
+            <img src="images/side_bar_icon.PNG" style="height: 100%; width: 100%;">
+        </div>
+        <a href="index.html">
+        <div id="logo">
+            <div id="logo_main"></div>
+        </div>
+        </a>
+        <div id="search_box">
+            <div id="search_content">
+                <input type="text" id="searchInput" placeholder="Search" name="searchInput">
+                 
+                <button type="submit"><img src="images/search_icon.PNG"></button> 
+            </div>
+            <div id="mic_logo">
+                <img src="images/mic_logo.png">
+            </div>
+        </div>    
+
+        <div id="header_right">
+            <div id="header_right_content">
+                <div id="create_icon"></div>
+                <div id="bell_icon">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div id="sign_box">
+                    <img src="images/Untitled sinf.png" style="height: 100%; width: auto;">
+                    <span style="padding: 2px; padding-left: 5px; color: #00a2e8; font-weight: 500; font-size: 15px;">Sign in</span>
+                </div>
+            </div>    
+        </div>  
+    </div>
+
+
+    <div id="body_main">
+
+        <div id="video_body">
+            <div class="video_container">
+                <video id="myVideo" preload="auto" loop autoplay controls style="height: auto;width: 100%;border-radius: 15px; border: 1px solid #3f3f3f;">Your browser does not support the video tag.</video>
+            </div>
+            <!--<button id="pipButton">Enter Picture-in-Picture</button>-->
+            <!--<div class="video_head">-->
+            <div class="video_heading_content">
+                <h2 id="video_title">Video Title</h2>
+            </div>    
+            <div class="channel_icon_box">
+                <div class="buttons_container"style="height: 48px;">
+                    <img id="channel_icon" src="" style="width: auto; height: 44px; background-size: cover; border-radius: 50%;">
+                    <div id="channell_name" style="width: auto ; height: 45px; padding: 5px 20px 5px 10px; color: white;"><p id="channel_name" style=" font-size: 17px; font-weight: 400; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Channel Name</p><span style=" font-size: 12px; font-weight: 500; color: rgba(255, 255, 255, 0.7);">85.7K Subscriber</span>
+                    </div>
+                    <button id="subscribe_button">Subscribe</button>
+                </div>    
+                <div class="buttons_container">
+                    <button class="_button" style="border-radius: 40px 0px 0px 40px; margin-right: 0;"><img src="images/like_icon_default.PNG" style="width: auto; height:20px; background-size: contain; margin: 02px 04px 02px 06px;"><span style="padding: 6px; font-size: 14px; color: white;">13.4K</span></button>
+                    <button class="_button" style="border-radius: 0 40px 40px 0;margin-left: 0;"><img src="images/dislike_icon.PNG" style="width: auto; height:20px; background-size: contain; margin: 02px 08px 02px 05px;"></button>
+                    <button class="_button" style="width: 95px;"><img src="images/share.PNG" style="width: auto; height:20px; background-size: contain;"><span style="padding: 05px; font-size: 14px; color: white;">Share</span></button>
+                    <button class="_button" style="width: 120px;"><img src="images/downloads.PNG" style="width: auto; height:20px; background-size: contain;"><span style="padding: 05px; font-size: 14px; color: white;">Download</span></button>
+                </div>    
+            </div>
+            <div class="video_discription">
+                <!--<p id="channel_name">Channel Name</p>-->
+                <p id="views_date">Views * Published Date</p>
+                <p style="color: white;margin-top: 2px; font-size: 14px;">Explore the enigmatic secrets of Area 51 in this captivating video. Uncover the mysteries surrounding this top-secret U.S. military facility, known for alleged UFO sightings and conspiracy theories. Discover the history, controversies, and ongoing fascination that make Area 51 a subject of enduring intrigue. Join us on this journey into the heart of a mysterious realm that has fueled curiosity and speculation for decades.
+                    </p>
+            </div>
+            <!--</div>-->
+            <div class="comments">
+                <img src="images/comments.PNG" style="border-radius: 20px;">
+            </div>
+
+        </div> 
+        
+        <div id="videos_bar">
+            <a href="video_window.html?src=video/SQL%20-%20Complete%20Course%20in%203%20Hours%20_%20SQL%20One%20Shot%20using%20MySQL.mp4&icon=apna_college_icon.jpg&title=SQL%20-%20Complete%20Course%20in%203%20Hours%20|%20SQL%20One%20Shot%20using%20MySQL&channel=Apna%20College&views=1.2%20M%20views&date=3%20weeks%20ago" style="text-decoration: none;">
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="video/thumbnail/sql.avif" style="width:185px;height:auto; border-radius: 10px;">
+                </div>
+                <div class="video_bar_heading_content">SQL - Complete Course in 3 Hours | SQL One Shot using MySQL
+                    <p style="margin-top: 06px;">Apna College</p>
+                    <p>1.2 M views · 3 weeks ago</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="video_window.html?src=video/video%20file/Mystery%20of%20Flight%20571%20_%20World's%20Greatest%20Miracle%20_%20Dhruv%20Rathee.mp4&icon=video/chanel%20icon/Dhruv%20Rathee.jpg&title=Mystery%20of%20Flight%20571%20|%20World's%20Greatest%20Miracle%20|%20Dhruv%20Rathee&channel=Dhruv%20Rathee&views=5.5%20M%20views&date=1%20Week%20ago" style="text-decoration: none;">
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="video/thumbnail/Mystery of Flight 571.jpg" style="width:185px;height:auto; border-radius: 10px;">
+                </div>
+                <div class="video_bar_heading_content">Mystery of Flight 571 | World's Greatest Miracle | Dhruv Rathee
+                    <p style="margin-top: 06px;">Dhruv Rathee</p>
+                    <p>5.5 M views * 1 Week ago</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="video_window.html?thumbnail=video/thumbnail/ind%20vs%20sl%20asia%20cup.webp&src=video/Super11%20Asia%20Cup%202023%20_%20Final%20_%20India%20vs%20Sri%20Lanka%20_%20Highlights.mp4&icon=video/chanel%20icon/Asian%20Cricket%20Council.jpg&title=Super11%20Asia%20Cup%202023%20|%20Final%20|%20India%20vs%20Sri%20Lanka%20|%20Highlights&channel=Asian%20Cricket%20Council&views=36%20M%20views&date=4%20weeks%20ago"style="text-decoration: none;">
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="video/thumbnail/ind vs sl asia cup.webp" style="width:185px;height:auto; border-radius: 10px;">
+                </div>
+                <div class="video_bar_heading_content">Super11 Asia Cup 2023 | Final | India vs Sri Lanka | Highlights
+                    <p style="margin-top: 06px;">Asian Cricket Council</p>
+                    <p>36 M views * 4 weeks ago</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="video_window.html?src=video/video%20file/How%20To%20Think_%20Episode%203.mp4&icon=video/chanel%20icon/Sandeep%20Maheshwari.jpg&title=How%20To%20Think%3F%20Episode%203&channel=Sandeep%20Maheshwari&views=605%20K%20views&date=4%20Months%20ago" style="text-decoration: none;">
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="video/thumbnail/how to think.jpg" style="width:185px;height:auto; border-radius: 10px;">
+                </div>
+                <div class="video_bar_heading_content">How To Think? Episode 3
+                    <p style="margin-top: 06px;">Sandeep Maheshwari </p>
+                    <p>605 K views * 4 Months ago</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="video_window.html?src=video/SQL%20-%20Complete%20Course%20in%203%20Hours%20_%20SQL%20One%20Shot%20using%20MySQL.mp4&icon=apna_college_icon.jpg&title=SQL%20-%20Complete%20Course%20in%203%20Hours%20|%20SQL%20One%20Shot%20using%20MySQL&channel=Apna%20College&views=1.2%20M%20views&date=3%20weeks%20ago" style="text-decoration: none;">
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="video/thumbnail/quiz website.jpg" style="width:185px;height:auto; border-radius: 10px;">
+                </div>
+                <div class="video_bar_heading_content">Dynamic Quiz Website using HTML CSS & JavaScript in Hindi🔥
+                    <p style="margin-top: 06px;">Thapa Technical</p>
+                    <p>7.3 K views * 4 weeks ago</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="video_window.html?src=video/video%20file/Malang%20_%20Dhoom-3.mp4&icon=video/chanel%20icon/musical%20vibes.jpg&title=Malang%20|%20Dhoom-3%20|%20Amir%20khan%20|%20Siddharth%20|%20Slowed%20Reverb%20|&channel=musical%20vibes&views=1.1%20M%20views&date=1%20Year%20ago" style="text-decoration: none;">
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="video/thumbnail/malang.jpg" style="width:185px;height:auto; border-radius: 10px;">
+                </div>
+                <div class="video_bar_heading_content">Malang | Dhoom-3 | Amir khan | Siddharth | Slowed Reverb |
+                    <p style="margin-top: 06px;">musical vibes</p>
+                    <p>1.1 M views * 1 Year ago</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="video_window.html?src=video/video%20file/Mystery%20of%20Area%2051%20_%20Are%20there%20really%20UFOs%20and%20Aliens_%20_%20Dhruv%20Rathee.mp4&icon=video/chanel%20icon/Dhruv%20Rathee.jpg&title=Mystery%20of%20Area%2051%20|%20Are%20there%20really%20UFOs%20and%20Aliens?%20|%20Dhruv%20Rathee&channel=Dhruv%20Rathee&views=10%20M%20views&date=9%20Months%20ago"style="text-decoration: none;">
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="video/thumbnail/AREA51.jpg" style="width:185px;height:auto; border-radius: 10px;">
+                </div>
+                <div class="video_bar_heading_content">Mystery of Area 51 | Are there really UFOs and Aliens? | Dhruv Rathee
+                    <p style="margin-top: 06px;">Dhruv Rathee</p>
+                    <p>10 M views * 9 Months ago</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="video_window.html?src=video/video%20file/Arrays%20In%20One%20Shot%20C%2B%2B%20_%20Complete%20DSA%20Course%202023.mp4&icon=video/chanel%20icon/college%20wallah.jpg&title=Arrays%20In%20One%20Shot%20C%2B%2B%20|%20Complete%20DSA%20Course%202023%20|%20Placement%20/%20Internships&channel=College%20Wallah&views=13%20K%20views&date=2%20Weeks%20ago"style="text-decoration: none;">
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="video/thumbnail/array.jpg" style="width:185px;height:auto; border-radius: 10px;">
+                </div>
+                <div class="video_bar_heading_content">Arrays In One Shot C++ | Complete DSA Course 2023 | Placement / Internships
+                    <p style="margin-top: 06px;">College Wallah</p>
+                    <p>13 K views * 2 Weeks ago</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="video_window.html?src=video/video%20file/OPPO%20Find%20N3%20Flip%20Unboxing%20-%20Flagship%20Flip%20Phone!.mp4&icon=video/chanel%20icon/Tech%20Burner.jpg&title=OPPO%20Find%20N3%20Flip%20Unboxing%20-%20Flagship%20Flip%20Phone!&channel=Tech%20Burner&views=1%20M%20views&date=1%20week%20ago" style="text-decoration: none;">
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="video/thumbnail/OPPO Find N3.jpg" style="width:185px;height:auto; border-radius: 10px;">
+                </div>
+                <div class="video_bar_heading_content">OPPO Find N3 Flip Unboxing - Flagship Flip Phone!
+                    <p style="margin-top: 06px;">Tech Burner</p>
+                    <p>1 M views * 1 weeks ago</p>
+                </div>
+            </div>
+            </a>
+            
+        </div>
+
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const queryParams = new URLSearchParams(window.location.search);
+            const videoSrc = queryParams.get("src");
+            const channelIcon = queryParams.get("icon");
+            const title = queryParams.get("title");
+            const channel = queryParams.get("channel");
+            const views = queryParams.get("views");
+            const date = queryParams.get("date");
+
+            const videoElement = document.getElementById("myVideo");
+            const channelIconImg = document.getElementById("channel_icon");
+            const videoTitle = document.getElementById("video_title");
+            const channelName = document.getElementById("channel_name");
+            const viewsDate = document.getElementById("views_date");
+
+            videoElement.src = videoSrc;
+            channelIconImg.src = channelIcon;
+            videoTitle.textContent = title;
+            channelName.textContent = channel;
+            viewsDate.textContent = `${views} * ${date}`;
+        });
+
+
+
+
+
+
+        /*
+        const video = document.getElementById("myVideo");
+        const pipButton = document.getElementById("pipButton");
+
+        pipButton.addEventListener("click", () => {
+            if (document.pictureInPictureElement) {
+                document.exitPictureInPicture()
+                    .catch(error => {
+                        console.error("Failed to exit Picture-in-Picture mode:", error);
+                    });
+            } else {
+                video.requestPictureInPicture()
+                    .then(() => {
+                        // Open the homepage in a new tab
+                        window.open("index.html", "_blank");
+                    })
+                    .catch(error => {
+                        console.error("Failed to enter Picture-in-Picture mode:", error);
+                    });
+            }
+        });*/
+    </script>
+</body>
+</html>
